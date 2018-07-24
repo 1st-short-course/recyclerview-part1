@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itm_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item
+        android:id="@+id/itm_addNew"
+        android:title="Add New"/>
+    <item
+        android:id="@+id/itm_View"
+        android:title="View">
+        <menu>
+            <item
+                android:id="@+id/grid"
+                android:title="Grid"/>
+            <item
+                android:id="@+id/linea"
+                android:title="Linear"/>
+        </menu>
+
+
+    </item>
+
+</menu>

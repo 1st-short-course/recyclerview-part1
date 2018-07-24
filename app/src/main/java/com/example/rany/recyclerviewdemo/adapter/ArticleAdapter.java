@@ -38,6 +38,16 @@ public class ArticleAdapter extends
         notifyDataSetChanged();
     }
 
+    public void clearData(){
+        this.articleList.clear();
+        notifyDataSetChanged();
+    }
+
+    public void addNewArticle(Article article){
+        this.articleList.add(0,article);
+        notifyDataSetChanged();
+    }
+
     public Article getArticle(int position){
         return this.articleList.get(position);
     }
